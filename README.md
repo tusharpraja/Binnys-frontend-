@@ -3,6 +3,9 @@
 This is the frontend of the **Movie Management System**, built using **React (Vite)**.  
 It provides a modern UI for browsing movies and allows **admin users** to manage movies.
 
+Admin login :  admin@movie.com
+password: admin123
+
 ---
 
 ## 🚀 Tech Stack
@@ -43,7 +46,7 @@ The frontend communicates with the backend using Axios.
 
 ```
 Backend Base URL:
-(https://binnys-backend-production.up.railway.app/)
+https://binnys-backend-production.up.railway.app/
 ```
 
 (For production, replace with deployed backend URL.)
@@ -59,7 +62,7 @@ npm run dev
 
 Frontend will run on:
 ```
-(https://binnys-frontend.vercel.app/)
+https://binnys-frontend.vercel.app/
 ```
 
 ---
