@@ -1,20 +1,18 @@
-// api/axios.js
-   import axios from 'axios';
+import axios from 'axios';
 
-   const api = axios.create({
-     baseURL: 'http://localhost:5000/api', // adjust to your backend URL
-     headers: {
-       'Content-Type': 'application/json',
-     },
-   });
+const api = axios.create({
+  baseURL: 'https://binnys-backend-production.up.railway.app/api',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
 
-   // Add token to requests
-   api.interceptors.request.use((config) => {
-     const token = localStorage.getItem('token');
-     if (token) {
-       config.headers.Authorization = `Bearer ${token}`;
-     }
-     return config;
-   });
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
 
-   export default api;
+export default api;
